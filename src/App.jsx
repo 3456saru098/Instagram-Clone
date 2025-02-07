@@ -9,6 +9,7 @@ export default function App() {
       <LeftSide/>
       <MiddleArea/>
       <RightSide/>
+      
     </div>
   )
 }
