@@ -7,9 +7,9 @@ import {
 } from "lucide-react";
 import React from "react";
 
-export default function NewsFeedSection() {
+export default function  NewsFeedSection() {
   return (
-    <div className="mt-8 space-y-8">
+    <div className="mt-8 space-y-8 lg:px-20  px-4">
       {/* Single post */}
 
       {posts.map((eachPost, index) => (

@@ -2,7 +2,7 @@ import React from 'react'
 import { AtSign, Bell, Compass, Film, House, Menu, MessageCircleCode, Search, SquarePlus, User } from 'lucide-react';
 export default function LeftSide() {
     return (
-        <div className='bg-gray-50 px-4'>
+        <div className='bg-gray-50 px-4 border-r border-gray-300'>
             <p>Instagram</p>
 
             <div className='flex flex-col justify-between h-[96vh]'>
