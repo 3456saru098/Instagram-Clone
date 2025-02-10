@@ -4,7 +4,7 @@ import NewsFeedSection from './NewsFeedSection';
 export default function MiddleArea() {
   return (
     <div>
-      <div className='flex gap-4 overflow-x-scroll px-2'>
+      <div className='flex gap-4 overflow-x-scroll px-2 pt-2 md:pt-10'>
 
         {
           stories.map((eachStory, index) => (

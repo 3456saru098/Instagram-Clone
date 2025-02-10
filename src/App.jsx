@@ -20,7 +20,7 @@ export default function App() {
           <RightSide />
         </div>
       </div>
-      <MobileMenu/>
+     
     </div>
   );
 }
