@@ -17,6 +17,10 @@ import RightSide from "./components/RightSide.jsx";
 
 // createRoot(document.getElementById("root")).render(
  export function Root(){
+    const location = useLocation();
+    console.log(location.pathname);
+
+
   return(
   <StrictMode>
    
@@ -40,7 +44,7 @@ import RightSide from "./components/RightSide.jsx";
         </div>
 
         <div className="sticky top-0 h-screen bg-gray-50 w-3/12 lg:w-4/12 hidden lg:block ">
-          <RightSide />
+        { location.pathname==="/" && <RightSide />}
         </div>
       </div>
       <MobileMenu/>
