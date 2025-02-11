@@ -13,6 +13,9 @@ export default function ReelsPage() {
 <div  key={index} className="relative">
         <video
           className="w-full"
+          autoPlay={true}
+          controls={true}
+          muted={true}
           src="https://videos.pexels.com/video-files/30418809/13035228_360_640_30fps.mp4"
         ></video>
 
