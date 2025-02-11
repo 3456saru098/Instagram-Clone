@@ -2,7 +2,7 @@ import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import "./index.css";
 import App from "./App.jsx";
-import { BrowserRouter, Routes } from "react-router";
+import { BrowserRouter, Routes, useLocation } from "react-router";
 import { Route } from "react-router";
 import MobileMenu from "./components/MobileMenu.jsx";
 import MobileHeader from "./components/MobileHeader.jsx";
@@ -15,9 +15,11 @@ import NotificationsPage from "./pages/NotificationsPage.jsx";
 import LeftSide from "./components/LeftSide.jsx";
 import RightSide from "./components/RightSide.jsx";
 
-createRoot(document.getElementById("root")).render(
+// createRoot(document.getElementById("root")).render(
+ export function Root(){
+  return(
   <StrictMode>
-    <BrowserRouter>
+   
     <MobileHeader/>
       
 <div className="flex  relative h-screen">
@@ -42,6 +44,14 @@ createRoot(document.getElementById("root")).render(
         </div>
       </div>
       <MobileMenu/>
-    </BrowserRouter>
+    
   </StrictMode>
 );
+ }
+
+ createRoot(document.getElementById("root")).render(
+  <BrowserRouter>
+  
+  <Root/>
+  </BrowserRouter>
+ );
