@@ -13,8 +13,8 @@ export default function RightSide() {
                     people.map((eachItem, index) => (
 
                         <div key={index} className='flex items-center justify-between'>
-                            <div className='flex gap-2'>
-                                <img height={50} width={50} className="rounded-full object-cover" src='https://images.unsplash.com/photo-1511367461989-f85a21fda167?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cHJvZmlsZXxlbnwwfHwwfHx8MA%3D%3D' alt='' />
+                            <div className='flex gap-2 '>
+                                <img  height={50} width={50} className="rounded-full object-cover" src='https://images.unsplash.com/photo-1511367461989-f85a21fda167?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cHJvZmlsZXxlbnwwfHwwfHx8MA%3D%3D' alt='' />
                                 <div>
                                     <p className='text-lg font-semibold'>{eachItem.username}</p>
                                     <p className='opacity-60'>Followed by{eachItem.followedBy}</p>

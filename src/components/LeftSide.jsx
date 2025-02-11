@@ -82,14 +82,14 @@ const linksTop = [
 
     {
         icon: <MessageCircleCode />,
-        title: "Message",
+        title: "Messages",
         path: "/messages",
 
     },
 
     {
         icon: <Bell />,
-        title: "Notification",
+        title: "Notifications",
         path: "/notifications",
 
     },
